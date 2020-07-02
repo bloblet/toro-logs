@@ -5,7 +5,7 @@ import logger
 
 bot = commands.Bot(command_prefix=config.prefix)
 
-bot.add_cog(logger.Logger())
+bot.add_cog(logger.Logger(bot))
 
 log_channel_setup = False
 @bot.event
